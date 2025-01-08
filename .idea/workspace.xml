@@ -4,138 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363dc030-a896-4e62-9bae-3653365d00d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/.metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_options.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/analysis_options.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/kotlin/com/example/app/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/kotlin/com/example/app/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-v21/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/drawable-v21/launch_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values-night/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/values-night/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/profile/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/jeans.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/assets/jeans.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tshirt.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/assets/tshirt.jfif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Flutter/Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Flutter/Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/Runner/Runner-Bridging-Header.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/RunnerTests/RunnerTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/ios/RunnerTests/RunnerTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2_jokes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/clothes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/lib/clothes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/flutter/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/main.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/my_application.cc" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/my_application.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/my_application.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/linux/my_application.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Flutter/Flutter-Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Flutter/Flutter-Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Base.lproj/MainMenu.xib" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Base.lproj/MainMenu.xib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Configs/AppInfo.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Configs/AppInfo.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Configs/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Configs/Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Configs/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Configs/Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Configs/Warnings.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Configs/Warnings.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/DebugProfile.entitlements" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/DebugProfile.entitlements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/MainFlutterWindow.swift" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/MainFlutterWindow.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Runner/Release.entitlements" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/Runner/Release.entitlements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/RunnerTests/RunnerTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/macos/RunnerTests/RunnerTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/icons/Icon-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/icons/Icon-192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/icons/Icon-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/icons/Icon-512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/icons/Icon-maskable-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/icons/Icon-maskable-192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/icons/Icon-maskable-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/icons/Icon-maskable-512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/flutter/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/Runner.rc" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/Runner.rc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/flutter_window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/flutter_window.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/flutter_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/flutter_window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/resource.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/resource.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/resources/app_icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/resources/app_icon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/runner.exe.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/runner.exe.manifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/utils.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/win32_window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/win32_window.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/runner/win32_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/windows/runner/win32_window.h" afterDir="false" />
+    <list default="true" id="363dc030-a896-4e62-9bae-3653365d00d1" name="Changes" comment="Reorganized repo: moved projects into separate folders">
+      <change beforePath="$PROJECT_DIR$/lab1_clothing_app/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +30,9 @@
     &quot;accountId&quot;: &quot;63da6a2f-d719-4b7f-96d7-1d2bd168013f&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -220,6 +93,27 @@
       <option name="presentableId" value="Default" />
       <updated>1736375808715</updated>
     </task>
+    <task id="LOCAL-00001" summary="Reorganized repo: moved projects into separate folders">
+      <option name="closed" value="true" />
+      <created>1736377749013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736377749013</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Reorganized repo: moved projects into separate folders">
+      <option name="closed" value="true" />
+      <created>1736377767998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736377767998</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reorganized repo: moved projects into separate folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reorganized repo: moved projects into separate folders" />
   </component>
 </project>
