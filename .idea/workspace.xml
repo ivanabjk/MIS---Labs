@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363dc030-a896-4e62-9bae-3653365d00d1" name="Changes" comment="Reorganized repo: moved projects into separate folders">
-      <change beforePath="$PROJECT_DIR$/lab1_clothing_app/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_clothing_app/web/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="363dc030-a896-4e62-9bae-3653365d00d1" name="Changes" comment="Reorganized repo: moved projects into separate folders" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +53,7 @@
     "git-widget-placeholder": "master",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ivana/Projects/lab2_jokes",
+    "last_opened_file_path": "C:/Users/ivana/MIS_Labs/lab2_jokes",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>

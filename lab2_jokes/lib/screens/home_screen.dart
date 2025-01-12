@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../providers/joke_provider.dart';
 import '../services/api_services.dart';
 import '../widgets/home_appbar.dart';
 import '../widgets/home_card.dart';
@@ -13,29 +16,11 @@ const Color offWhitePeach = Color(0xFFFFFBF0);
 
 class _HomeScreenState extends State<HomeScreen> {
   final ApiService apiService = ApiService();
-  List<String> jokeTypes = [];
 
   @override
   void initState() {
     super.initState();
-    fetchJokeTypes();
-  }
-
-  void fetchJokeTypes() async {
-    try {
-      List<String> types = await apiService.getJokeTypes();
-      setState(() {
-        jokeTypes = types;
-      });
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Joke types refreshed')),
-      );
-    } catch (e) {
-      print(e);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Failed to refresh joke types')),
-      );
-    }
+    Provider.of<JokeProvider>(context, listen: false).fetchJokeTypes();
   }
 
   @override
@@ -43,34 +28,42 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Column(
         children: [
-          CustomAppBar(onRefresh: fetchJokeTypes),
+          CustomAppBar(
+              onRefresh: Provider.of<JokeProvider>(context, listen: false)
+                  .fetchJokeTypes),
           Expanded(
             child: Container(
               color: offWhitePeach,
-              child: jokeTypes.isEmpty
-                  ? Center(child: CircularProgressIndicator())
-                  : GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  childAspectRatio: 3 / 2,
-                  crossAxisSpacing: 10,
-                  mainAxisSpacing: 10,
-                ),
-                itemCount: jokeTypes.length,
-                padding: EdgeInsets.all(10),
-                itemBuilder: (context, index) {
-                  return CustomCard(
-                    jokeType: jokeTypes[index],
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>
-                              JokesByTypeScreen(type: jokeTypes[index]),
-                        ),
-                      );
-                    },
-                  );
+              child: Consumer<JokeProvider>(
+                builder: (context, jokeProvider, child) {
+                  return jokeProvider.jokeTypes.isEmpty
+                      ? Center(child: CircularProgressIndicator())
+                      : GridView.builder(
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            childAspectRatio: 3 / 2,
+                            crossAxisSpacing: 10,
+                            mainAxisSpacing: 10,
+                          ),
+                          itemCount: jokeProvider.jokeTypes.length,
+                          padding: EdgeInsets.all(10),
+                          itemBuilder: (context, index) {
+                            String jokeType = jokeProvider.jokeTypes[index];
+                            return CustomCard(
+                              jokeType: jokeProvider.jokeTypes[index],
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => JokesByTypeScreen(
+                                        type: jokeType),
+                                  ),
+                                );
+                              },
+                            );
+                          },
+                        );
                 },
               ),
             ),

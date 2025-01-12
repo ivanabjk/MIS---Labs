@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lab2_jokes/providers/joke_provider.dart';
 import 'package:lab2_jokes/screens/random_joke_screen.dart';
+import 'package:provider/provider.dart';
 import '../models/joke.dart';
 import '../services/api_services.dart';
 import '../widgets/jokes_appbar.dart';
@@ -9,7 +11,7 @@ const Color evenLighterOffWhitePeach = Color(0xFFFFFBF0);
 
 class JokesByTypeScreen extends StatelessWidget {
   final String type;
-  final ApiService apiService = ApiService();
+  //final ApiService apiService = ApiService();
 
   JokesByTypeScreen({required this.type});
 
@@ -35,7 +37,7 @@ class JokesByTypeScreen extends StatelessWidget {
             child: Container(
               color: evenLighterOffWhitePeach,
               child: FutureBuilder<List<Joke>>(
-                future: apiService.getJokesByType(type),
+                future: Provider.of<JokeProvider>(context, listen: false).getJokesByType(type),
                 builder: (context, snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
                     return Center(child: CircularProgressIndicator());
@@ -44,11 +46,22 @@ class JokesByTypeScreen extends StatelessWidget {
                   } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
                     return Center(child: Text('No jokes found'));
                   } else {
-                    return ListView.builder(
-                      itemCount: snapshot.data!.length,
-                      itemBuilder: (context, index) {
-                        return CustomCard(joke: snapshot.data![index]);
+                    return Consumer<JokeProvider>(
+                      builder: (context, jokeProvider, child){
+                        return ListView.builder(
+                          itemCount: snapshot.data!.length,
+                          itemBuilder: (context, index) {
+                            Joke joke = snapshot.data![index];
+                            return CustomCard(
+                                joke: joke,
+                                onFavoriteToggle: (){
+                                  jokeProvider.toggleFavorite(joke);
+                              },
+                            );
+                          },
+                        );
                       },
+
                     );
                   }
                 },

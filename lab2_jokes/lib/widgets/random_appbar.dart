@@ -15,6 +15,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             color: Color(0xFF4B0082), // dark violet
             width: 2.0,
           ),
+
         ),
       ),
       child: AppBar(
