@@ -1,7 +1,13 @@
+import 'dart:io';
+
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 import '../models/joke.dart';
 import '../services/api_services.dart';
+import 'package:path/path.dart' as path;
 
 class JokeProvider extends ChangeNotifier {
   final ApiService _apiService = ApiService();
@@ -9,9 +15,15 @@ class JokeProvider extends ChangeNotifier {
   List<Joke> _favoriteJokes = [];
   Map<String, List<Joke>> _cachedJokesByType = {};
 
+  bool _isObscure = true;
+  File? _img = null;
+
   List<String> get jokeTypes => _jokeTypes;
 
   List<Joke> get favoriteJokes => _favoriteJokes;
+
+  bool get isObscure => _isObscure;
+  File? get image => _img;
 
   JokeProvider() {
     fetchJokeTypes();
@@ -38,6 +50,11 @@ class JokeProvider extends ChangeNotifier {
     }
   }
 
+  void toggleVisibility() {
+    _isObscure = !_isObscure;
+    notifyListeners();
+  }
+
   void toggleFavorite(Joke joke) {
     joke.isFavorite = !joke.isFavorite;
     if (joke.isFavorite) {
@@ -45,15 +62,42 @@ class JokeProvider extends ChangeNotifier {
     } else {
       _favoriteJokes.removeWhere((element) => element.setup == joke.setup);
     }
-    // if (_favoriteJokes.contains(joke)) {
-    //   _favoriteJokes.remove(joke);
-    // } else {
-    //   _favoriteJokes.add(joke);
-    // }
     notifyListeners();
   }
 
   bool isFavorite(Joke joke) {
     return joke.isFavorite;
+  }
+
+  Future<void> pickImage() async {
+    final ImagePicker picker = ImagePicker();
+    try{
+      final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+      if (pickedFile != null) {
+        _img = File(pickedFile.path);
+        print(_img!.path);
+        notifyListeners();
+      } else {
+        print('No image selected.');
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  Future<void> uploadImage() async {
+    if (_img == null) return;
+    notifyListeners();
+    try {
+      String fileName = path.basename(_img!.path);
+      Reference storageRef = FirebaseStorage.instance.ref().child('profile_pictures/$fileName');
+      await storageRef.putFile(_img!);
+      String downloadUrl = await storageRef.getDownloadURL();
+      await FirebaseAuth.instance.currentUser?.updatePhotoURL(downloadUrl);
+    } catch (e) {
+      print('Error uploading image: $e');
+    } finally {
+      notifyListeners();
+    }
   }
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import '../screens/login_screen.dart';
 import '../screens/random_joke_screen.dart';
+import '../services/auth_service.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -30,7 +32,15 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             icon: Icon(Icons.casino, color: Colors.deepPurple),
             onPressed: onCasinoPress,
           ),
+          IconButton(
+            onPressed: () {
+              AuthService().logout(context);
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const LoginPage()));
+            },
+            icon: const Icon(Icons.logout),
+          ),
         ],
+
         centerTitle: true,
         backgroundColor: Color(0xFFE6E6FA), // light violet
         elevation: 0,

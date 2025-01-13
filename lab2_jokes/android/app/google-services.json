@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179887587323",
+    "project_id": "jokes-9cfe1",
+    "storage_bucket": "jokes-9cfe1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179887587323:android:ca121372e6636d5cbe555e",
+        "android_client_info": {
+          "package_name": "com.example.lab2_jokes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSwebWXiuvD65SOeLKtXE21BOr58DrtRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

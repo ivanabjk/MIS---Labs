@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import '../screens/login_screen.dart';
 import '../screens/random_joke_screen.dart';
+import '../services/auth_service.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onRefresh;
@@ -28,20 +30,23 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         backgroundColor: Color(0xFFE6E6FA), // light violet
         actions: [
           IconButton(
-            icon: Icon(Icons.casino, color: Colors.deepPurple),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => RandomJokeScreen(),
-                ),
-              );
+              AuthService().logout(context);
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const LoginPage()));
             },
+            icon: const Icon(Icons.logout),
           ),
         ],
         leading: IconButton(
-          icon: Icon(Icons.refresh, color: Colors.deepPurple),
-          onPressed: onRefresh,
+          icon: Icon(Icons.casino, color: Colors.deepPurple),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => RandomJokeScreen(),
+              ),
+            );
+          },
         ),
         elevation: 0,
       ),
