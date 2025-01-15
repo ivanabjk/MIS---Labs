@@ -16,7 +16,14 @@ class Joke {
       type: json['type'],
       setup: json['setup'],
       punchline: json['punchline'],
-      //isFavorite: json['isFavorite'] ?? false,
+      isFavorite: json['isFavorite'] ?? false,
     );
   }
+
+  Map<String, dynamic> toJson() => {
+        'type': type,
+        'setup': setup,
+        'punchline': punchline,
+        'isFavorite': isFavorite,
+      };
 }

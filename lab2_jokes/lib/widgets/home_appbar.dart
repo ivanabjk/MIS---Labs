@@ -6,7 +6,7 @@ import '../services/auth_service.dart';
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onRefresh;
 
-  CustomAppBar({required this.onRefresh});
+  const CustomAppBar({super.key, required this.onRefresh});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xFFE6E6FA), // light violet
+        //backgroundColor: Color(0xFFE6E6FA), // light violet
         actions: [
           IconButton(
             onPressed: () {

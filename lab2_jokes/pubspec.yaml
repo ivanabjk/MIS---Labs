@@ -45,6 +45,7 @@ dependencies:
   path: ^1.9.0
   shared_preferences: ^2.3.4 # https://pub.dev/packages/shared_preferences
   flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
 
 
 

@@ -3,7 +3,6 @@ import 'package:lab2_jokes/providers/joke_provider.dart';
 import 'package:lab2_jokes/screens/random_joke_screen.dart';
 import 'package:provider/provider.dart';
 import '../models/joke.dart';
-import '../services/api_services.dart';
 import '../widgets/jokes_appbar.dart';
 import '../widgets/jokes_card.dart';
 
@@ -13,7 +12,7 @@ class JokesByTypeScreen extends StatelessWidget {
   final String type;
   //final ApiService apiService = ApiService();
 
-  JokesByTypeScreen({required this.type});
+  const JokesByTypeScreen({super.key, required this.type});
 
   String capitalize(String s) => s[0].toUpperCase() + s.substring(1);
 

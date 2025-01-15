@@ -8,6 +8,8 @@ import '../widgets/home_card.dart';
 import 'jokes_by_type_screen.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }

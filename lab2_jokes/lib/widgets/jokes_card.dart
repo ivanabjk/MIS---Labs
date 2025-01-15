@@ -8,7 +8,7 @@ class CustomCard extends StatelessWidget {
   final Joke joke;
   final VoidCallback onFavoriteToggle;
 
-  CustomCard({
+  const CustomCard({super.key, 
     required this.joke,
     required this.onFavoriteToggle,
   });

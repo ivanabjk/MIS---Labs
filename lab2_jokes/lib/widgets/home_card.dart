@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import '../screens/jokes_by_type_screen.dart';
 
 class CustomCard extends StatelessWidget {
   final String jokeType;
   final VoidCallback onTap;
 
-  CustomCard({required this.jokeType, required this.onTap});
+  const CustomCard({super.key, required this.jokeType, required this.onTap});
 
   String capitalize(String s) => s[0].toUpperCase() + s.substring(1);
 
