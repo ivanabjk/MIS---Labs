@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24544673972",
+    "project_id": "events-7105e",
+    "storage_bucket": "events-7105e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24544673972:android:17b0d07e544772a3a6d7e1",
+        "android_client_info": {
+          "package_name": "com.example.lab4_student_calendar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4XLdFsDU9zuA7wDPxPT5DC9wiNQU2Leg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
