@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import '../models/joke.dart';
+import '../providers/joke_provider.dart';
 import '../services/api_services.dart';
 import '../widgets/random_appbar.dart';
 import '../widgets/random_card.dart';
@@ -7,25 +10,14 @@ import '../widgets/random_card.dart';
 const Color evenLighterOffWhitePeach = Color(0xFFFFFBF0);
 
 class RandomJokeScreen extends StatefulWidget {
+  const RandomJokeScreen({super.key});
+
   @override
   _RandomJokeScreenState createState() => _RandomJokeScreenState();
 }
 
 class _RandomJokeScreenState extends State<RandomJokeScreen> {
   final ApiService apiService = ApiService();
-  late Future<Joke> randomJoke;
-
-  @override
-  void initState() {
-    super.initState();
-    randomJoke = apiService.getRandomJoke();
-  }
-
-  void refreshJoke() {
-    setState(() {
-      randomJoke = apiService.getRandomJoke();
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,29 +25,26 @@ class _RandomJokeScreenState extends State<RandomJokeScreen> {
       body: Column(
         children: [
           CustomAppBar(
-            title: 'Random Joke',
-            onRefresh: refreshJoke,
+            title: 'Joke Of The Day',
+            //onRefresh: refreshJoke,
           ),
           Expanded(
             child: Container(
               color: evenLighterOffWhitePeach,
-              child: FutureBuilder<Joke>(
-                future: randomJoke,
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
+              child: Consumer<JokeProvider>(
+                builder: (context, jokeProvider, child) {
+                  if (jokeProvider.jokeOfTheDay == null) {
+                    jokeProvider.fetchRandomJoke(); // Ensure the joke is fetched once
                     return Center(child: CircularProgressIndicator());
-                  } else if (snapshot.hasError) {
-                    return Center(child: Text('Failed to load joke'));
-                  } else if (!snapshot.hasData) {
-                    return Center(child: Text('No joke found'));
                   } else {
                     return Center(
                       child: IntrinsicHeight(
-                        child: CustomCard(joke: snapshot.data!),
+                        child: CustomCard(joke: jokeProvider.jokeOfTheDay!),
                       ),
                     );
                   }
                 },
+
               ),
             ),
           ),

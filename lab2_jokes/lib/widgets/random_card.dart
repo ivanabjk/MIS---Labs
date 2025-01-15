@@ -4,7 +4,7 @@ import '../models/joke.dart';
 class CustomCard extends StatelessWidget {
   final Joke joke;
 
-  CustomCard({required this.joke});
+  const CustomCard({super.key, required this.joke});
 
   @override
   Widget build(BuildContext context) {
