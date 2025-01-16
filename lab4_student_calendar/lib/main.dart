@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
     return ChangeNotifierProvider(
       create: (context) => UserProvider(),
       child: MaterialApp(
-        title: 'Jokes',
+        title: 'Student Calendar',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
