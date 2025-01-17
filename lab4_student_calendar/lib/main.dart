@@ -1,30 +1,51 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:lab4_student_calendar/pages/home_page.dart';
 import 'package:lab4_student_calendar/pages/profile_page.dart';
 import 'package:lab4_student_calendar/pages/register_page.dart';
 import 'package:lab4_student_calendar/providers/user_provider.dart';
+import 'package:lab4_student_calendar/services/messaging_service.dart';
+import 'package:lab4_student_calendar/services/notification_service.dart';
 import 'package:provider/provider.dart';
 
 import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  final notificationService = NotificationService();
+  await notificationService.init();
+
+  final messagingService = MessagingService();
+  messagingService.initialize();
 
   runApp(
     MultiProvider(
       providers: [
         ChangeNotifierProvider<UserProvider>(
           create: (_) => UserProvider(),
-        )
+        ),
+        Provider<NotificationService>.value(
+          value: notificationService,
+        ),
+        Provider<MessagingService>.value(
+          value: messagingService,
+        ),
       ],
       child: const MyApp(),
     ),
   );
+
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+}
+
+Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  await Firebase.initializeApp();
+  print("Handling a background message: ${message.messageId}");
 }
 
 class MyApp extends StatefulWidget {
@@ -35,7 +56,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
@@ -71,7 +91,6 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
@@ -90,11 +109,6 @@ class _MainPageState extends State<MainPage> {
           },
           destinations: [
             const NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-            // NavigationDestination(
-            //     icon: Badge(
-            //         label: Text("$favoriteCount"),
-            //         child: const Icon(Icons.favorite)),
-            //     label: 'Favorites'),
             const NavigationDestination(
                 icon: Icon(Icons.person), label: 'Profile'),
           ],
@@ -103,7 +117,6 @@ class _MainPageState extends State<MainPage> {
       ),
       body: [
         HomePage(),
-        //FavoritesScreen(),
         const ProfilePage(),
       ][currentPageIndex],
     );

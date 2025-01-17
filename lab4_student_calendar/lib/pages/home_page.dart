@@ -3,10 +3,12 @@ import 'package:intl/intl.dart';
 import 'package:lab4_student_calendar/pages/add_exam_page.dart';
 import 'package:lab4_student_calendar/pages/edit_exam_page.dart';
 import 'package:lab4_student_calendar/providers/user_provider.dart';
+import 'package:lab4_student_calendar/services/notification_service.dart';
 import 'package:provider/provider.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import '../domain/exam_schedule.dart';
+import 'map_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,14 +19,32 @@ class _HomePageState extends State<HomePage> {
   CalendarFormat _calendarFormat = CalendarFormat.month;
   DateTime _focusedDay = DateTime.now();
   DateTime _selectedDay = DateTime.now();
+  final NotificationService _notificationService = NotificationService();
+
+  void initState() {
+    super.initState();
+    _notificationService.init();
+  }
 
   @override
   Widget build(BuildContext context) {
     final userProvider = Provider.of<UserProvider>(context);
+    final notificationService = Provider.of<NotificationService>(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Calendar'),
+        title: Text('Student Calendar'),
+        // actions: [
+        //   IconButton(
+        //     icon: Icon(Icons.map),
+        //     onPressed: () {
+        //       Navigator.push(
+        //         context,
+        //         MaterialPageRoute(builder: (context) => MapPage()),
+        //       );
+        //     },
+        //   ),
+        // ],
       ),
       body: Column(
         children: <Widget>[
@@ -105,6 +125,9 @@ class _HomePageState extends State<HomePage> {
                                 onPressed: () async {
                                   await userProvider
                                       .deleteExamSchedule(exam.id!);
+                                  _notificationService.showNotification(
+                                      'Exam Deleted',
+                                      '${exam.examName} has been deleted.');
                                   setState(() {});
                                 },
                               ),

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:lab4_student_calendar/providers/user_provider.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:intl/intl.dart';
+import 'package:lab4_student_calendar/providers/user_provider.dart';
+import 'package:lab4_student_calendar/services/location_service.dart';
+import 'package:provider/provider.dart';
 
-import '../domain/exam_schedule.dart';  // Import for date formatting
+import '../domain/exam_schedule.dart'; // Import for date formatting
 
 class AddExamPage extends StatefulWidget {
   final DateTime selectedDate;
@@ -20,12 +22,21 @@ class _AddExamPageState extends State<AddExamPage> {
   TextEditingController _locationController = TextEditingController();
   late DateTime _selectedDate;
   TimeOfDay _selectedTime = TimeOfDay.now();
+  //Position? _currentPosition;
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     _selectedDate = widget.selectedDate;
+    //_getLocation();
   }
+
+  // void _getLocation() async {
+  //   Position position = await LocationService().getCurrentLocation();
+  //   setState(() {
+  //     _currentPosition = position;
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -133,6 +144,11 @@ class _AddExamPageState extends State<AddExamPage> {
                 },
                 child: Text('Submit'),
               ),
+              // _currentPosition == null
+              //     ? CircularProgressIndicator()
+              //     : Text(
+              //         'Current Location: Lat: ${_currentPosition!.latitude}, Lon:${_currentPosition!.longitude}',
+              //       ),
             ],
           ),
         ),

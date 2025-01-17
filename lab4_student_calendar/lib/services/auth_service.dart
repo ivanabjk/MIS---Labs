@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lab4_student_calendar/services/shared_pref.dart';
 
+import '../main.dart';
 import '../pages/home_page.dart';
 import '../pages/login_page.dart';
 
@@ -34,7 +35,7 @@ class AuthService{
       _sharedPref.setEmail(email);
       await _sharedPref.getLogged() == false ? _sharedPref.setLogged(true) : null;
       Future.delayed(const Duration(seconds: 2), () {
-        Navigator.of(context, rootNavigator: true).pushReplacement(MaterialPageRoute(builder: (_) => HomePage()));
+        Navigator.of(context, rootNavigator: true).pushReplacement(MaterialPageRoute(builder: (_) => MainPage()));
       });
       return 'Success';
     } on FirebaseAuthException catch (e) {
